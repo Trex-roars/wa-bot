@@ -26,7 +26,7 @@ client.on('ready', () => {
 client.on('message', async (message) => {
     console.log(`Received message: ${message.body}`);
 
-    if (!message.body.startsWith('!')) return; // Only respond to messages starting with "!"
+    if (!message.body.startsWith('@sukku')) return; // Only respond to messages starting with "!"
 
     try {
         const prompt = message.body.substring(1); // Remove "!" and use the rest as the prompt
